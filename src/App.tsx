@@ -3,6 +3,8 @@ import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 import Carousel from './components/Carousel'
 import Download from './components/Download'
+import FAQ from './components/FAQ'
+import Contact from './components/Contact'
 
 function App() {
 
@@ -14,6 +16,8 @@ function App() {
       <Hero />
       <Carousel />
       <Download />
+      <FAQ />
+      <Contact />
     </div>
   )
 }
