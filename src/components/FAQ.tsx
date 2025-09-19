@@ -44,7 +44,7 @@ function FAQ() {
             </div>
 
             <div className="text-center w-3/4 md:w-2/4 mx-auto">
-                <p>
+                <p className="text-gray-500">
                     Here are some of our FAQs. If you have any other questions you’d like
                     answered please feel free to email us.
                 </p>
@@ -72,7 +72,7 @@ function FAQ() {
 
                         {/* Answer */}
                         <div
-                            className={`mt-3 text-gray-600 text-sm transition-all duration-500 overflow-hidden ${openIndex === index
+                            className={`mt-3 text-gray-500 text-sm transition-all duration-500 overflow-hidden ${openIndex === index
                                     ? "max-h-40 opacity-100"
                                     : "max-h-0 opacity-0"
                                 }`}

@@ -5,10 +5,9 @@ import Carousel from './components/Carousel'
 import Download from './components/Download'
 import FAQ from './components/FAQ'
 import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 function App() {
-
-
 
   return (
     <div role="main" className='max-w-[1440px] mx-auto'>
@@ -18,6 +17,7 @@ function App() {
       <Download />
       <FAQ />
       <Contact />
+      <Footer />
     </div>
   )
 }

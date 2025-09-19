@@ -6,7 +6,7 @@ function Hero() {
         <section className="hero flex flex-col md:flex-row h-full py-[50px]">
             <div className="hero__info w-full md:w-1/2 flex flex-col justify-center p-10 md:p-0 md:pl-[150px] gap-6 order-2 md:order-1 text-center md:text-start">
                 <h1 className="hero__title text-4xl font-medium">A Simple Bookmark Manager</h1>
-                <p className="hero__info">A clean and simple interface to organize your favourite websites. Open a new
+                <p className="hero__info text-gray-500">A clean and simple interface to organize your favourite websites. Open a new
                     browser tab and see your sites load instantly. Try it for free.</p>
                 <div className='hero__buttons flex flew-row gap-4 mx-auto md:mx-0'>
                     <button className='hero__chrome cursor-pointer border hover:bg-white hover:border-[var(--Blue-600)] hover:text-[var(--Blue-600)] shadow-lg text-base md:text-xs text-white rounded-md px-6 py-3 bg-[var(--Blue-600)]'>Get it on Chrome</button>

@@ -31,7 +31,7 @@ function Download() {
             </div>
 
             <div className="carousel__info text-center w-3/4 md:w-3/7 mx-auto">
-                <p>
+                <p className='text-gray-500'>
                     We’ve got more browsers in the pipeline. Please do let us know if you’ve
                     got a favourite you’d like us to prioritize.
                 </p>
@@ -49,8 +49,8 @@ function Download() {
                             className="card bg-white shadow-lg rounded-lg text-center w-[300px] h-auto pb-5"
                         >
                             <img src={card.mobile} alt={card.title} className="mx-auto my-6" />
-                            <h3 className="text-xl font-semibold mb-2">{card.title}</h3>
-                            <p className="text-gray-600 mb-4">{card.content}</p>
+                            <h3 className="text-xl font-semibold mb-2 text-[var(--Blue-950)">{card.title}</h3>
+                            <p className="text-gray-500 mb-4">{card.content}</p>
                             <img src={dots} alt="" className="my-4" />
                             <button className="cursor-pointer border hover:bg-white hover:border-[var(--Blue-600)] hover:text-[var(--Blue-600)] shadow-lg text-base md:text-xs text-white rounded-md px-6 py-3 bg-[var(--Blue-600)]">
                                 {card.button}

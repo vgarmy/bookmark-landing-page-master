@@ -32,7 +32,7 @@ function Carousel() {
             </div>
 
             <div className="carousel__info text-center w-3/4 md:w-3/7 mx-auto">
-                <p>
+                <p className="text-gray-500">
                     Our aim is to make it quick and easy for you to access your favourite
                     websites. Your bookmarks sync between your devices so you can access
                     them on the go.
@@ -76,9 +76,9 @@ function Carousel() {
 
 
                 {/* Text */}
-                <div className="w-full md:w-1/2 flex flex-col text-center md:text-left justify-center px-4 md:px-0 gap-3">
+                <div className="w-full md:w-1/2 flex flex-col text-center md:text-left justify-center px-4 md:px-0 gap-3 bg-[var(--Blue-950)">
                     <h3 className="carousel__sliders-title text-2xl mb-3 font-medium">{slides[activeSlide].title}</h3>
-                    <p className="carousel__sliders-content text-gray-600 max-w-md">{slides[activeSlide].content}</p>
+                    <p className="carousel__sliders-content text-gray-500 max-w-md">{slides[activeSlide].content}</p>
                     <button
                         className="cursor-pointer inline-block w-auto self-center md:self-start border hover:bg-white hover:border-[var(--Blue-600)] hover:text-[var(--Blue-600)] shadow-lg text-xs text-white rounded-md px-6 py-3 bg-[var(--Blue-600)]"
                     >
