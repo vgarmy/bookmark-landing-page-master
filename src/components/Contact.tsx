@@ -15,11 +15,13 @@ function Contact() {
 
     if (!email) {
       setError("Whoops, make sure it's an email");
+      setSent("")
     } else if (!validateEmail(email)) {
       setError("Whoops, make sure it's an email");
+      setSent("")
     } else {
       setError("");
-      setSent("Submitted email:" + email);
+      setSent("Email submitted");
       setEmail(""); // reset input
     }
   };
@@ -45,20 +47,22 @@ function Contact() {
               />
               {error && (
                 <>
-                  <span className="absolute left-0 right-0 -bottom-[30px] h-[30px] bg-red-500 rounded-b"></span>
-                  <p className="absolute left-2 -bottom-[26px] text-white italic text-xs">{error}</p>
+                  {/* Röda bottenbordern blir “block” i mobil, absolut i desktop */}
+                  <span className="block md:absolute left-0 right-0 h-[28px] bg-red-500 rounded-b"></span>
+                  <p className="text-start ml-2 text-white italic text-xs md:mt-2 mt-[-22px] md:absolute md:-bottom-[26px]">{error}</p>
                 </>
               )}
-               {sent && (
+              {sent && (
                 <>
-                  <p className="absolute left-2 -bottom-[26px] text-white italic text-xs">{sent}</p>
+                  <span className="block md:absolute left-0 right-0 h-[28px]"></span>
+                  <p className="text-start ml-2 text-white italic text-xs md:mt-2 mt-[-22px] md:absolute md:-bottom-[26px]">{sent}</p>
                 </>
               )}
             </div>
 
             <button
               type="submit"
-              className="text-xs flex-[2] border bg-[var(--Red-400)] hover:bg-white hover:text-[var(--Red-400)] text-white px-6 py-2 rounded cursor-pointer border-[var(--Red-400)]"
+              className="text-xs flex-[2] mt-2 md:mt-0 border bg-[var(--Red-400)] hover:bg-white hover:text-[var(--Red-400)] text-white px-6 py-2 rounded cursor-pointer border-[var(--Red-400)]"
             >
               Contact Us
             </button>
