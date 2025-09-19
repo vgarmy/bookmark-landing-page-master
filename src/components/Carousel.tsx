@@ -41,24 +41,28 @@ function Carousel() {
 
             {/* Navigation Links */}
             <div className="carousel__links flex justify-center">
-                <div className="flex flex-col md:flex-row space-x-8 border-b border-gray-300">
+                <div className="flex flex-col md:flex-row">
                     {slides.map((slide, index) => (
                         <button
                             key={index}
                             onClick={() => setActiveSlide(index)}
-                            className={`relative pb-4 cursor-pointer transition-colors  ${activeSlide === index
-                                ? "text-red-500"
-                                : "text-gray-500 hover:text-red-500"
+                            className={`relative pb-6 mt-10 w-60 cursor-pointer transition-colors border-b border-gray-300 ${index === 0 ? "md:border-t-0 pt-6 md:pt-0 border-t border-gray-300" : ""
+                                } ${activeSlide === index
+                                    ? "text-red-500"
+                                    : "text-gray-500 hover:text-red-500"
                                 }`}
                         >
                             {activeSlide === index && (
-                                <span className="text-center md:absolute md:left-0 md:right-0 -bottom-[1px] border-b-2 border-red-500"></span>
+                                <span className="hidden md:block absolute left-0 right-0 -bottom-[1px] border-b-4 border-red-500"></span>
                             )}
                             {slide.title}
                         </button>
                     ))}
                 </div>
             </div>
+
+
+
             {/* Slides */}
             <div className="carousel__sliders flex flex-col md:flex-row gap-10 py-[90px] items-center justify-center">
                 {/* Bild */}
